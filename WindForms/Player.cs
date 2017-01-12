@@ -71,7 +71,6 @@ namespace WindForms
             }
             return m_level;
         }
-        public Player Chris(1, 0);
     }
   
 }

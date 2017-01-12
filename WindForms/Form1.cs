@@ -23,18 +23,18 @@ namespace WindForms
         }
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-           if(progressBar1.Value != 100)
+
         }
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
             
         }
-      
 
         private void button1_Click(object sender, EventArgs e)
         {
             if (progressBar1.Value == 100)
             {
+                
                 textBox1.Text = "LEVEL UP";
                 progressBar1.Value -= 100;
             }
@@ -43,14 +43,15 @@ namespace WindForms
                 if (progressBar1.Value < 60)
                 {
                     progressBar1.Value += 10;
-                    
-                    
+                    Player.EXP += 10;
                 }
                 if (progressBar1.Value >= 60)
                 {
                     progressBar1.Value += 5;
+                    Player.EXP += 5;
                 }
             }
+             
         }
 
     }
