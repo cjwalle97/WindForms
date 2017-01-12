@@ -10,7 +10,7 @@ namespace WindForms
     {
         private int m_level;
         private int m_experience;
-        //private int m_health;
+        private int m_health;
         //private int m_mana;
         //private int m_strength;
         //private int m_magic;
@@ -18,9 +18,9 @@ namespace WindForms
         //private int m_agility;
         //private int m_resilience;
 
-        public Player(int l, int e /*int h, int m, int s, int b, int d, int a, int r*/ )
+        public Player(int l, int e, int h /*int m, int s, int b, int d, int a, int r*/ )
         {
-            m_level = l; m_experience = e; /*m_health = h; m_mana = m; m_strength = s;
+            m_level = l; m_experience = e; m_health = h; /*m_mana = m; m_strength = s;
                 m_magic = b; m_dexterity = d; m_agility = a; m_resilience = r;*/
 
         }
