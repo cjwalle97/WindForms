@@ -68,6 +68,7 @@ namespace WindForms
             if (m_experience == NeededExp)
             {
                 m_level += 1;
+                m_experience = 0;
             }
             return m_level;
         }
