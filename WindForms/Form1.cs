@@ -20,6 +20,8 @@ namespace WindForms
         Player Cleric;
         Party Friend;
         Party Foe;
+        Player TurnPlayer;
+        Party TurnParty;
         public Form1()
         {
             InitializeComponent();
@@ -31,6 +33,8 @@ namespace WindForms
             Cleric = new Player(1, 0, 60);
             Friend = new Party(Knight, Wizard, Priest);
             Foe = new Party(Samurai, Shaman, Cleric);
+            TurnPlayer = new Player(0, 0, 0);
+            TurnParty = new Party(null,null,null);
         }
 
         private void progressBar1_Click(object sender, EventArgs e)

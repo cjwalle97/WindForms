@@ -6,14 +6,35 @@ using System.Threading.Tasks;
 
 namespace WindForms
 {
+    /// <summary>
+    /// this is the combat functon, it is used to cycle the turns of all the Players in both Parties
+    /// </summary>
     class Combat
     {
-        private List<Party> ActiveSides;
+        private List<Party> Parties;
+        private Party currentParty;
+        private Player currentPlayer;
 
         public Combat(Party a, Party b)
         {
-            ActiveSides.Add(a);
-            ActiveSides.Add(b);
+            Parties.Add(a);
+            Parties.Add(b);
+            currentParty = a;
+        }
+        //Name: TurnOrder
+        //Type: Void
+        //Description: to determine who the Current Player is and then move on to the next Player or Party
+        public void TurnOrder()
+        {
+
+            //int j = 0;
+            //Party currentParty = Parties[j];
+            //Player currentPlayer;
+            
+            //if ()
+            //{
+            //    currentParty = Parties[j += 1];
+            //}
         }
     }
 }

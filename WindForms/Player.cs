@@ -72,6 +72,10 @@ namespace WindForms
             }
             return m_level;
         }
+        public void EndPlayerTurn()
+        {
+
+        }
     }
   
 }
