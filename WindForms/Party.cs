@@ -18,16 +18,17 @@ namespace WindForms
             Members.Add(c);
             currentPlayer = a;
         }
-        public Player GetNext()
+        public Player GetNextPlayer(Player.EndPlayerTurn nextplayer)
         {
-            for(int i = 0; Members[i]!= currentPlayer; i++)
+            Player NewPlayer = currentPlayer;
+            for (int i = 0; Members[i] != currentPlayer; i++)
             {
-                if(Members[i] == currentPlayer)
+                if (Members[i] == currentPlayer)
                 {
                     currentPlayer = Members[i + 1];
                 }
             }
-            return currentPlayer;
+            return NewPlayer;
         }
     }
 }

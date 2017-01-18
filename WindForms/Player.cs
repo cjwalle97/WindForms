@@ -72,7 +72,7 @@ namespace WindForms
             }
             return m_level;
         }
-        public delegate bool EndPlayerTurn();
+        public delegate bool EndPlayerTurn(Player a);
     }
   
 }
