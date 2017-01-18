@@ -27,7 +27,6 @@ namespace WindForms
         public Party GetNextParty(Player.EndPlayerTurn nextPlayer)
         {
             
-            
         }
     }
 }
