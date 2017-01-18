@@ -24,17 +24,9 @@ namespace WindForms
         //Name: TurnOrder
         //Type: Void
         //Description: to determine who the Current Player is and then move on to the next Player or Party
-        public void TurnOrder()
+        public Party GetNextParty()
         {
-
-            //int j = 0;
-            //Party currentParty = Parties[j];
-            //Player currentPlayer;
             
-            //if ()
-            //{
-            //    currentParty = Parties[j += 1];
-            //}
         }
     }
 }

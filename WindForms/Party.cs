@@ -20,7 +20,14 @@ namespace WindForms
         }
         public Player GetNext()
         {
-            if (currentPlayer.EndPlayerTurn)
+            for(int i = 0; Members[i]!= currentPlayer; i++)
+            {
+                if(Members[i] == currentPlayer)
+                {
+                    currentPlayer = Members[i + 1];
+                }
+            }
+            return currentPlayer;
         }
     }
 }
